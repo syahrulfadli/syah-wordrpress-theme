@@ -1,0 +1,123 @@
+.posts{
+    padding-right: 1.5rem;
+}
+.type-post,.type-page{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+}
+.entry-title {
+    margin: 0 0 1rem;
+    font-size: 35px !important;
+    font-weight: 900 !important;
+    word-break: break-word;
+    a{
+      color: #000;
+      text-decoration:none;
+    }
+  }
+.entry-title-index{
+    margin: 0 0 1rem;
+    font-size: 35px !important;
+    font-weight: 900 !important;
+    a{
+      color: #000;
+      text-decoration:none;
+    }
+}
+.entry-meta{
+    margin:1rem 0;
+    a{
+        text-decoration: none;
+        color:#000000;
+    }
+}
+.entry-meta-index{
+    margin:0 0 1rem;
+    color: #777;
+    a{
+        text-decoration: none;
+        color:#777;
+        .updated{
+            display: none;
+        }
+    }
+}
+.updated::before{
+    content: " - Last update: ";
+    position: relative;
+}
+.wp-post-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.wp-block-code{
+    border: 1px solid #e2e2e2;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.wp-block-quote{
+    border-left: 2px solid #777;
+    padding-left: 20px;
+    cite{
+        font-size: .8rem;
+    }
+}
+.wp-block-image{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    figcaption{
+        text-align: center;
+        color: #777;
+        font-size: .8rem;
+    }
+}
+.entry-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    span{
+        margin-right: .5rem;
+        color:#777;
+        flex-grow: 1;
+        a{
+            text-decoration: none;
+            color: #777;
+        }
+    }
+}
+.comments-link{
+    a{
+        color: #4982fd !important;
+    }
+}
+.nav-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-previous, .nav-next {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 700;
+    box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+}
+.nav-next{
+    grid-column-start: 2;
+}

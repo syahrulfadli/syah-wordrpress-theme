@@ -1,0 +1,16 @@
+.fs-1{
+    font-size: 37px;
+}
+
+
+// fonts "main" fonts are Lato, the others is "web safe fonts"
+body {
+    font-family: "Lato", "-apple-system", "BlinkMacSystemFont", "San Francisco",
+      "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
+      "Arial", sans-serif;
+      word-spacing: 2px;
+  }
+a{
+    color:#4982fd;
+    text-decoration: none;
+}

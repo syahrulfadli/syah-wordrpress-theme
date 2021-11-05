@@ -1,0 +1,21 @@
+{
+  "name": "syah-wp-theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-c": "sass assets/scss/global.scss style.css",
+    "scss-w": "sass --watch assets/scss/global.scss style.css"
+  },
+  "keywords": [
+    "php",
+    "wordpress",
+    "theme"
+  ],
+  "author": "Syahrul Fadli",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.6.1"
+  }
+}

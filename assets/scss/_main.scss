@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    box-sizing:border-box;
+    padding: 100px 0 0;
+    @media screen and (max-width:800px) {
+        display: block;
+    }
+}
+.posts{
+    width: 66.666%;
+    @media screen and (max-width:800px) {
+        width: 100%;
+    }
+}
+.sidebar{
+    width: 33.333%;
+    @media screen and (max-width:800px) {
+        width: 100%;
+    }
+}
+.hide{
+    display: none;
+}
+.page-header{
+    background-color: #fff;
+    padding: 1rem ;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    h1{
+        margin:0;
+    }
+}
+.w-100{
+    width: 100%;
+}

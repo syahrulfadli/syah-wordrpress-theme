@@ -1,0 +1,110 @@
+.comments-area{
+    background-color: #fff;
+    padding: 1rem 2rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    ol{
+        list-style: none;
+        padding: 0;
+    }
+}
+.children{
+    margin-left: 4rem;
+}
+.comment-body{
+    padding:1rem;
+    margin:1rem 0;
+    border-bottom: 1px solid #777;
+}
+.comments-title{
+    margin-top: 0;
+}
+.comment-author{
+    display: inline-flex;
+    align-items: center;
+    background-color: #4982fd;
+    border-radius: 17px;
+    overflow: hidden;
+    a{
+        color: #fff;
+    }
+}
+.bypostauthor{
+    .comment-author{
+        background-color: #000;
+        border: 2px solid #4982fd;
+        .fn{
+            padding: 0;
+        }
+    }
+    .comment-author .fn{
+        ::after{
+            content: "Author";
+            position: relative;
+            margin-left: .5rem;
+            font-size: .8rem;
+            padding: 1rem .5rem;
+            background-color: #4982fd;
+        }
+    }
+}
+.comment-meta{
+    //display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 32px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+.fn{
+    padding: 0 1rem 0 0;
+}
+.says{
+    display: none;
+}
+.comment-metadata{
+    float: right;
+    font-size: 1rem;
+    margin-top: .5rem;
+    a{
+        color: #777;
+    }
+}
+.form-submit{
+    text-align: right;
+}
+.submit{
+    padding:.5rem 1rem;
+    color: #fff !important;  
+    background-color: #000 !important;
+}
+.comment-form-comment{
+    display: flex;
+    textarea{
+        margin-left: 1rem;
+        width: 100%;
+    }
+}
+.comment-form-author,.comment-form-email,.comment-form-url{
+    margin-top: 25px;
+    label{
+        position: absolute;
+        margin-top: -25px;
+    }
+}
+.comment-reply-title{
+    small{
+        a{
+            float: right;
+            padding:.3rem .5rem;
+            background-color: #f54646;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}

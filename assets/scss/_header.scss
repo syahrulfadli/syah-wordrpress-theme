@@ -1,0 +1,37 @@
+.brand{
+    margin:0;
+    font-weight: 900;
+    font-size: 20px;
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+}
+.site-header{
+    background-color: #ffffff;
+    padding:5px 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px -5px 22px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px -5px 22px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -5px 22px 0px rgba(0,0,0,0.1);
+    z-index: 1111;
+}
+.site-branding{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex-grow: 0;
+}
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
+.custom-logo-link{
+    display: inline-block;
+    margin-right: 10px;
+    img{
+        height: auto;
+        width: 40px;
+    }
+}

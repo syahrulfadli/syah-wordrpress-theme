@@ -1,0 +1,102 @@
+.navbar{
+    padding: 15px 0;
+    flex-grow: 1;
+    word-break: break-all;
+    ul{
+        list-style: none;
+        display: inline-flex;
+        padding:0;
+        margin: 0;
+        li{
+            position: relative;
+            padding: .5rem;
+            a{
+                text-decoration: none;
+                color: #000000;
+                opacity: .7;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.mobile-hide{
+    display: block;
+    @media screen and (max-width:800px){
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        top:100%;
+        ul,ul li ul{
+            display: block;
+        }
+    }
+}
+.toggled{
+    display: block;
+}
+.menu-item-has-children{
+    &::before{
+        content: "";
+        float: right;
+        background-color: #000000;
+        width: 16px;
+        height: 16px;
+        margin-top:4px;
+        -webkit-mask-image: url(/wordpress/wp-content/uploads/chevron-down.svg);
+        mask-image: url(/wordpress/wp-content/uploads/chevron-down.svg);
+        mask-repeat:no-repeat;
+        -webkit-mask-repeat:no-repeat;
+    }
+        &:hover .sub-menu{
+            display: block !important;
+        }
+        .sub-menu .menu-item-has-children:hover .sub-menu{
+            display: block !important;
+        }
+}
+.sub-menu{
+    position:absolute;
+    left: 0;
+    word-break: initial;
+    width: max-content;
+    display: none !important;
+    border-radius: 5px;
+    top:100%;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 3px 11px -5px rgba(0,0,0,0.1);
+    @media screen and (max-width:800px) {
+        width: 100%;
+    }
+    .menu-item-has-children .sub-menu{
+        display: none !important;
+        background-color: #f2f2f2;
+        left: 100%;
+        top: 0;
+        @media screen and (max-width:800px){
+            left: 0;
+            top:initial;
+            width: 100%;
+            z-index: 1111;
+        }
+    }
+}
+.burger-mobile{
+    display: none;
+    border:none;
+    font-size: 21px;
+    background: transparent;
+    float: right;
+    @media screen and (max-width:800px){
+        display: block;
+    }
+    &:hover .mobile-hide{
+        display: block !important;
+    }
+}

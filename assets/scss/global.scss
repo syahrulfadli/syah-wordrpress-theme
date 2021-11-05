@@ -1,0 +1,37 @@
+/*
+Author: Syahrul Fadli
+Site: syahrulfadli.netlify.app
+*/
+@use 'variables';
+@use 'header';
+@use 'nav_menu';
+@use 'main';
+@use 'posts';
+@use 'comments';
+@use 'typography';
+@use 'sidebar';
+@use 'footer';
+
+// container
+.wrap{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0 auto;
+    background:#f7f7f7;  
+}
+input,textarea{
+    border: 2px solid #000 !important;
+    font-family: Lato;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+    &:focus{
+        border-color: #4982fd !important;
+    }
+}
